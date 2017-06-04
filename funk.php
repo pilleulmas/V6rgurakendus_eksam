@@ -50,11 +50,13 @@ function logout(){
 	$_SESSION=array();
 	session_destroy();
 	header("Location: ?");
+	include_once('vaated/login.html');
 }
 
 function hindamine($kasutaja_id, $pakkumine){
 	global $connection;
-	$sql="INSERT INTO pulmas_eksam_pakkumine (kasutaja, pakkumine) VALUES ". $kasutaja_id.", ".$pakkumine."";
+	$sql="INSERT INTO pulmas_eksam_pakkumine (kasutaja, pakkumine) VALUES (".$kasutaja_id.", ".$pakkumine.")";
+	echo $sql;
 	if (mysqli_query($connection, $sql)) {
 	echo "";
 	//	echo "Record updated successfully";

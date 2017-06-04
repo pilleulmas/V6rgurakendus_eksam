@@ -11,7 +11,10 @@ if (isset($_GET['page']) && $_GET['page']!=""){
 
 switch($page){
 	case "login":
-		include('vaated/login.html');
+		login();
+	break;
+	case "logout":
+		logout();
 	break;
 	case "hindamine":
 		include('vaated/hindamine.html');

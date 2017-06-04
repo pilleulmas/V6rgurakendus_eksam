@@ -39,3 +39,10 @@ border-style:solid;
 border-color:#68ADF7;
 margin: 0px;
 }
+
+#vorm{
+	margin:auto;
+	width: 35%;	
+	margin-top:25px;
+	margin-bottom:25px;
+}
