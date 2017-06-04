@@ -1,0 +1,41 @@
+body {
+	margin: 0px;
+	background-color: #EBF4FE;
+}
+
+h2, p {
+	margin:20px;
+	text-align:center;
+}
+
+#header, #wrap{
+	width: 1200px;
+	margin:auto;
+}
+
+#header ul{
+	list-style: none;
+	margin:20px;
+	padding:0px;
+}
+#header li {
+	display: inline-block;
+}
+
+#header a {
+	display: inline-block;
+	padding:5px 15px;
+	color:black;
+	text-decoration: none;
+}
+
+#header a:hover, #header li:hover {
+	background: #BADAFC;	
+}
+
+#p2is {
+border-width: 4px 0px 8px;
+border-style:solid;
+border-color:#68ADF7;
+margin: 0px;
+}

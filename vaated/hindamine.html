@@ -1,0 +1,12 @@
+<?php if (!empty($_SESSION['user'])): ?> 
+	<h2>Lisa enda hinnang!</h2>
+	
+			<br/>
+				<form id="minuvorm" action="hindamine.php" method="post">
+				<input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>">
+				<input type="text" name="pakkumine" placeholder="Minu pakkumine"/><br/>
+				<input type="submit" name="hindan" value="pakun!"/>
+				</form>
+			
+		
+<?php endif;?>

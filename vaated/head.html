@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Hindamine</title>
+	<link rel="stylesheet" type="text/css" href="stiil.css">
+</head>
+<body>
+	<div id="p2is">
+		<div id="header">
+			<ul>
+				<?php if (empty($_SESSION['user'])): ?>
+				<li><a href="?page=login">Logi sisse</a></li>
+				<?php else: ?>
+				<li><a href="?page=logout">Logi välja</a></li>
+				<?php endif ?>
+			</ul>
+		</div>
+	</div>
